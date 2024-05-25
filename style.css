@@ -29,8 +29,30 @@ a {
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
+
   
 }
+
+main div {
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  background-color: rgba(238, 255, 0, 0.89);
+  padding:15px;   
+  font-family: 'Arial', sans-serif;
+  font-size: small;
+  
+  
+  
+}
+
+main div nav ul li a {
+  color: rgba(0, 81, 255, 0.774);
+  
+}
+
+
+
 
 footer {
   background: radial-gradient(circle, rgba(0,125,255,1) 0%, rgba(9,9,121,1) 65%, rgba(2,0,36,1) 85%);
@@ -71,26 +93,13 @@ footer {
   color: black;
 }
 
-main section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Arial', sans-serif;
-  
-  
 
-}
 
-form {
-  background-color: rgb(186, 194, 214);
-  width: 900px;
-  height: 400px;
-  border-radius: 25px;
-  padding: 20px;
-  display:block;
-  
 
-}
+
+
+
+
 
 .box{
   flex-direction: column;
