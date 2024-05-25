@@ -5,7 +5,13 @@
       <link rel="stylesheet" href="stilos.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
    </head>
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+    </style>
    <style>  
 *{
   margin: 0;
@@ -132,8 +138,33 @@ nav ul li.btn span.show:before{
     --color-neutral-40: #f5f5f5;
 }
 
-main {
-    height: 80vh;
+body .texto {
+    display: flex;
+    color: black;
+    font-size: 16px;
+    font-family: "Roboto Slab";
+    margin-left: 14px;
+    margin-top: 80px;
+    margin: 50px; 
+    padding: 20px;
+    background-color: #D8D8D8;
+    margin: 60px;
+    height: 34vh;
+    width: 640px;
+    border-radius: 20px;
+    margin-left: 400px;
+}
+
+.imagem1 #latas_de_tinta{
+    float: left;
+    margin-left: 20px;
+    
+}   
+
+.imagem2 #loja{
+    float: left;
+    margin-left: 20px ;
+    
 }
 
 footer {
@@ -200,6 +231,7 @@ footer {
     flex-direction: column;
     gap: 0.75rem;
     list-style: none;
+    margin-left: 50px;
 }
 
 .footer-list .footer-link {
@@ -215,6 +247,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    margin-left: 50px;
 }
 
 #footer_subscribe p {
@@ -279,10 +312,10 @@ footer {
           <img src="./IMG/Logo_Arte_em_Latas.JPG" alt="Logo Arte em Latas">
             <li class="btn"><span class="fas fa-bars"></span></li>
             <div class="items">
-               <li><a href="#">Inicio</a></li>
-               <li><a href="#">Sobre Nós </a></li>
-               <li><a href="#">Orçamentos</a></li>
-               <li><a href="#">Fale Conosco</a></li>
+               <li><a href="Inicio">Inicio</a></li>
+               <li><a href="Sobre Nós">Sobre Nós </a></li>
+               <li><a href="Orçamentos">Orçamentos</a></li>
+               <li><a href="Fale Conosco">Fale Conosco</a></li>
             </div>
             <li class="search-icon">
                <input type="search" placeholder="Pesquisa">
@@ -293,26 +326,46 @@ footer {
          </ul>
       </nav>
    </body>
-   <body>
-      <main>
-          
-      </main>
+    <main>
+       <div class="imagem1">
+            <img id="latas_de_tinta" src="IMG/Latas_de_ Tintas.jpg" width="160px" >
+       </div>
+       <div class="imagem2">
+            <img id="loja" src="IMG/Loja.jpg" width="160px">
+        </div>
+        <div>
+            <body>
+                
+
+                <ul class="texto"> Em uma pequena cidade onde tudo parecia desbotado e sem vida, um jovem descobriu um armazém abandonado
+                    e decidiu transformá-lo em uma loja de tintas. Com muito esforço, ele renovou o espaço e o encheu de cores
+                    vibrantes. No dia da inauguração, a loja encantou os moradores, que começaram a explorar as novas possibilidades
+                    de cores e criatividade. A loja se tornou um ponto de encontro e revitalizou a cidade, trazendo alegria
+                    e inspiração para todos. Assim, a loja de tintas não apenas coloriu as paredes, mas também os sonhos dos
+                    habitantes.
+                </ul>
+            </body>
+            
+        </main>
+        
+        
+
       <footer>
-          <div id="footer_content">
+        <div id="footer_content">
               <div id="footer_contacts">
                 <img src="./IMG/Logo_Arte_em_Latas.JPG" alt="Logo Arte em Latas">
                   <p>Redes sociais.</p>
   
                   <div id="footer_social_media">
-                      <a href="#" class="footer-link" id="instagram">
+                      <a href="Instagram" class="footer-link" id="instagram">
                           <i class="fa-brands fa-instagram"></i>
                       </a>
   
-                      <a href="#" class="footer-link" id="facebook">
+                      <a href="Facebook" class="footer-link" id="facebook">
                           <i class="fa-brands fa-facebook-f"></i>
                       </a>
   
-                      <a href="#" class="footer-link" id="whatsapp">
+                      <a href="Whatsapp" class="footer-link" id="whatsapp">
                           <i class="fa-brands fa-whatsapp"></i>
                       </a>
                   </div>
