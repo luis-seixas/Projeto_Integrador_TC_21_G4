@@ -26,7 +26,9 @@ let nomeInput = document.getElementById("nome");
 let nomeLabel = document.querySelector('label[for="nome"]');
 let nomeHelper = document.getElementById("nome-helper");
 
-
+/*verificar porque o POP UP de campo obrigatorio está aparecendo no alto da página */
+/*verificar porque o não está aparecendo a mensagem de erro abaixo do campo */
+/*assistir novamente video Joy JavaScript ll Validação de formulário e arquivo aula de 23/05 */
 
 togglePopup(nomeInput, nomeLabel)
 
