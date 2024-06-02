@@ -106,7 +106,7 @@ footer {
     background-color: white;
     width: 700px;
     height: 100px;
-    padding: 50px;
+    padding: 1.5rem 40px;
     align-items:normal;
     gap: 16px;
     
@@ -176,5 +176,43 @@ footer {
 }
  
 
- 
+.required-popup::after {
+    content: "*Campo obrigatório";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: 0.2rem .3rem;
+    width: auto;
+    display: block;
+    background-color: #202020;
+    /*verificar porque o POP UP de campo obrigatorio está aparecendo no alto da página */
+    /*verificar porque o não está aparecendo a mensagem de erro abaixo do campo */
+    /*assistir novamente video Joy JavaScript ll Validação de formulário e arquivo aula de 23/05 */
+}
+
+input.error{
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+}
+
+input.correct{
+    border: solid 2px #206620;
+    background-color: #BBCCBB;
+    color: #206620;
+}
+
+.visible{
+    display: block;
+}
+
+.helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+}
+
+
 
