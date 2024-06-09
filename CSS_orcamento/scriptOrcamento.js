@@ -39,9 +39,11 @@ nomeInput.addEventListener("change", (e)=> {
       
       nomeHelper.innerText = "Seu nome precisa ter 3 ou mais caracteres";
         inputIncorreto(nomeInput, nomeHelper)
+        inputCorretos.nome = false
     } else {
       
         inputCorreto(nomeInput, nomeHelper);
+        inputCorretos.nome = true
     }
 })
 
@@ -59,10 +61,12 @@ emailInput.addEventListener("change", (e)=> {
     if(valor.includes("@") && valor.includes(".com")){
       
         inputCorreto(emailInput, emailHelper);
+        inputCorretos.email = true
     } else {
       
       emailHelper.innerText = "Precisa inserir um email válido";
         inputIncorreto(emailInput, emailHelper);
+        inputCorretos.email = false
     }
 })
 
@@ -81,11 +85,45 @@ telefoneInput.addEventListener("change", (e)=> {
       
       telefoneHelper.innerText = "Seu telefone precisa ter 8 ou mais numeros";
         inputIncorreto(telefoneInput, telefoneHelper)
+        inputCorretos.telefone = false
     } else {
       
         inputCorreto(telefoneInput, telefoneHelper);
+        inputCorretos.telefone = true
+
     }
 })
+
+
+
+
+const BotSub = document.querySelector("button[type=submit]")
+
+let inputCorretos = {
+    nome: false,
+    email: false,
+    telefone: false,
+}
+
+BotSub.addEventListener("click", (e)=>{
+    if(
+        !inputCorretos.nome ||
+        !inputCorretos.email ||
+        !inputCorretos.telefone
+    ) {
+        e.preventDefault()
+        alert("Para que seu orçamento seja enviado, é necessário preencher todos os campos obrigatórios.")
+
+    }  else {
+        alert("Seu orçamento foi enviado com sucesso, aguarde contato de nossos consultores.")
+
+    
+
+    }
+
+    
+})
+
 
 
 
