@@ -204,8 +204,8 @@ input.correct{
     color: #206620;
 }
 
-.visible{
-    display: flex;
+.visible {
+    display: block;
 }
 
 .helper-text {
